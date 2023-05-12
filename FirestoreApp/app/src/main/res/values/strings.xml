@@ -3,4 +3,7 @@
     <string name="edit_text_hint_title">Title</string>
     <string name="edit_text_hint_description">Description</string>
     <string name="button_save">Save</string>
+    <string name="update_title_button">Update Item</string>
+    <string name="delete_description">Delete description</string>
+    <string name="delete_note">Delete note</string>
 </resources>
