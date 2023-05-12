@@ -30,29 +30,16 @@
         android:id="@+id/load_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Loader"
+        android:text="Load note"
         />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_update_title"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/update_title_button"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/delete_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/delete_description"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/delete_note"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/delete_note"/>
-
-    <TextView
-        android:id="@+id/text_view_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_view_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
