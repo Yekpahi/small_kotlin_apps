@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "467149599027",
+    "project_id": "firestoreapp-5ec45",
+    "storage_bucket": "firestoreapp-5ec45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467149599027:android:e3ed1056631cbbc8c7ce46",
+        "android_client_info": {
+          "package_name": "fr.prince.firestoreapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467149599027-6ik7ah5apa4cegbkn6rhlkm16c6k7htv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxP-lstNL4NqtQjbEVqvnAEBzJ8qXdjcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467149599027-6ik7ah5apa4cegbkn6rhlkm16c6k7htv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,21 +3,15 @@
 <item
     android:id="@+id/nav_home"
     android:icon="@drawable/ic_home"
-    android:title="@string/text_nav_home"
-
-    />
+    android:title="@string/text_nav_home" />
 
     <item
         android:id="@+id/nav_search"
         android:icon="@drawable/ic_search"
-        android:title="@string/text_nav_search"
-
-        />
+        android:title="@string/text_nav_search" />
 
     <item
         android:id="@+id/nav_favorites"
         android:icon="@drawable/ic_favorites"
-        android:title="@string/text_nav_favorites"
-
-        />
+        android:title="@string/text_nav_favorites" />
 </menu>
