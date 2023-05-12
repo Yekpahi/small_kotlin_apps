@@ -11,6 +11,7 @@ import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
+import fr.prince.firestoreapp.classes.Note
 
 class MainActivity : AppCompatActivity() {
     private lateinit var editTextTitle : EditText
@@ -78,9 +79,13 @@ class MainActivity : AppCompatActivity() {
             }
             document?.let {
                 if (it.exists()) {
-                    val title = document.getString(KEY_TITLE)
-                    val description = document.getString(KEY_DESCRIPTION)
-                    textViewData.text = "Text : $title\nDescription : $description"
+//                    val title = document.getString(KEY_TITLE)
+//                    val description = document.getString(KEY_DESCRIPTION)
+//                    textViewData.text = "Text : $title\nDescription : $description"
+
+                    // Ce simple code remplace le code commenter
+                    val note = it.toObject(Note :: class.java)
+                    textViewData.text = "Title : ${note?.title}\nDescription : ${note?.description}"
                 } else {
                     textViewData.text = ""
                     Toast.makeText(this@MainActivity, "Error : The document does not  exist!", Toast.LENGTH_SHORT).show()
@@ -104,9 +109,12 @@ class MainActivity : AppCompatActivity() {
         val title = editTextTitle.text.toString()
         val description = editTextDscription.text.toString()
 
-        val note = mutableMapOf<String, Any>()
+       /* val note = mutableMapOf<String, Any>()
         note.put(KEY_TITLE, title)
-        note.put(KEY_DESCRIPTION, description)
+        note.put(KEY_DESCRIPTION, description)*/
+
+        // Ce simple code remplace le code commenter
+        val note = Note(title, description)
 
         docRef.set(note)
             .addOnCompleteListener {
